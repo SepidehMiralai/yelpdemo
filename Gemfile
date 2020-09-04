@@ -53,3 +53,9 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'pg', group: :production
+# gem 'carrierwave'
+# gem 'fog-aws'
+# gem 'excon'
+# gem 'carrierwave-aws'
+gem "aws-sdk-s3", require: false
+
