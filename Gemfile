@@ -61,4 +61,3 @@ gem 'rack-cors'
 gem 'aws-sdk-s3'
 gem 'dotenv-rails'
 gem 'figaro'
-
