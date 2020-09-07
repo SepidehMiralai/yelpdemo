@@ -59,4 +59,5 @@ gem 'pg', group: :production
 # gem 'carrierwave-aws'
 
 gem 'aws-sdk-s3', require: false
+gem 'dotenv-rails'
 
