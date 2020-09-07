@@ -57,7 +57,6 @@ gem 'pg', group: :production
 # gem 'fog-aws'
 # gem 'excon'
 # gem 'carrierwave-aws'
-gem 'rack-cors'
-gem 'aws-sdk-s3'
-gem 'dotenv-rails'
-gem 'figaro'
+
+gem 'aws-sdk-s3', require: false
+
