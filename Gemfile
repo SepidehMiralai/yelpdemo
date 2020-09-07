@@ -60,4 +60,5 @@ gem 'pg', group: :production
 
 gem 'aws-sdk-s3', require: false
 gem 'dotenv-rails'
+gem 'devise'
 
