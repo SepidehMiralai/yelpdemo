@@ -8,6 +8,7 @@
 }
 .navbar .container-fluid{ 
     background-color: #b80b03;
+    padding: 10px, 200px;
     .navbar-nav .nav-item a {
       color: #ffffff;
       font-size: 16px;
@@ -22,5 +23,9 @@
     }
   .container-fluid{
     padding: 10px, 120px;
+  }
+  .navbar {
+    min-height: 80px;
+    
   }
   
