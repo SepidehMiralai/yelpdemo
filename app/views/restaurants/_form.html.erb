@@ -1,7 +1,10 @@
 <%= form_with(model: restaurant, local: true, :html => { multipart: true }) do |form| %>
   <% if restaurant.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(restaurant.errors.count, "error") %> prohibited this restaurant from being saved:</h2>
+    <div id="error_explanation" class="alert alert-danger alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+      <h4><%= pluralize(restaurant.errors.count, "error") %> prohibited this restaurant from being saved:</h4>
 
       <ul>
         <% restaurant.errors.full_messages.each do |message| %>
@@ -13,22 +16,22 @@
 
   <div class="form-group">
     <%= form.label :name %>
-    <%= form.text_field :name, class: "form-control" %>
+    <%= form.text_field :name, class: "form-control", placeholder: "Boston Pizza" %>
   </div>
 
   <div class="form-group">
     <%= form.label :address %>
-    <%= form.text_field :address, class: "form-control" %>
+    <%= form.text_field :address, class: "form-control", placeholder:"201 Brookline Ave., Boston, MA 02215" %>
   </div>
 
   <div class="form-group"">
     <%= form.label :phone %>
-    <%= form.text_field :phone, class: "form-control" %>
+    <%= form.text_field :phone, class: "form-control", placeholder:"(617) 247-0174" %>
   </div>
 
   <div class="form-group">
     <%= form.label :website %>
-    <%= form.text_field :website, class: "form-control" %>
+    <%= form.text_field :website, class: "form-control", placeholder:"https://bostonpizza.com/en/index.html" %>
   </div>
 
   <div class="form-group">
@@ -40,3 +43,4 @@
     <%= form.submit class: "btn btn-primary" %>
   </div>
 <% end %>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
