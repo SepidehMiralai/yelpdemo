@@ -1,4 +1,5 @@
 class Restaurant < ApplicationRecord
+  # searchkick
   has_one_attached :image
 
   has_many :reviews
@@ -8,6 +9,7 @@ class Restaurant < ApplicationRecord
     message: "must be in the format (123) 456-7890" }
   validates :website, format: { with: /\Ahttps?:\/\/.*\z/,
     message: "must start with http:// or https://" }
-  validates :address, format: { with: /\A\d+ [^,]+, [^,]+, [A-Z]{2} \d{5}\z/,
-    message: "must be in the format 350 Fifth Avenue, New York, NY 10118" }
+
+  # accepts_nested_attributes_for :reviews
+  
 end

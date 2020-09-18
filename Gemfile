@@ -58,9 +58,10 @@ gem 'pg', group: :production
 # gem 'excon'
 # gem 'carrierwave-aws'
 
-gem 'aws-sdk', '~> 3'
 gem 'dotenv-rails'
 gem 'devise'
+gem 'searchkick', '~> 4.01'
+gem "aws-sdk-s3", require: false
 
 
 
