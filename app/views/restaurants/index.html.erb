@@ -1,9 +1,10 @@
 
 
 <div class="jumbotron">
-  <h2> Yelpdemo is the best way to find reviews on local restaurants.</h2>
-  <h3> Explore the favorite diners, pastry shops and great restaurants in your community. <br>
-       Leave reviews and ratings for the community eateries and restaurants please.</h3>
+<br>
+<br>
+<br>
+  <h2> Welcome to Yelp Demo!</h2>
 </div>
 
 <table class= "table table-hover table-condensed">
@@ -37,6 +38,6 @@
 
 <br>
 <% if user_signed_in? && current_user.admin? %>
-  <%= link_to 'New Restaurant', new_restaurant_path, class: "btn btn-link" %>
+  <%= link_to 'Add a new restaurant', new_restaurant_path, class: "btn btn-link" %>
 <% end %>
 <%= image_tag "https://sepid-yelpdemo.s3.ca-central-1.amazonaws.com/builder.png" %>

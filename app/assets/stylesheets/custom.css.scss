@@ -1,21 +1,30 @@
 .jumbotron {
+  background-image: url('https://sepid-yelpdemo.s3.ca-central-1.amazonaws.com/jumbotron.jpeg');
   background-color: #FFFF99;
   border: 3px solid #FFFF33;
   h2 {
-    color: #c41200;
+    color: #ad1c0c;
     font-weight: bold;
   }
+  h3 {
+    font-size: medium;
+    color: #0a0600;
+    font-weight: bold;
+  }
+  
 }
+
 .navbar .container-fluid{ 
-    background-color: #b80b03;
+    background-color: #cf746f;
     padding: 10px, 200px;
+    a:hover { background-color: rgb(238, 10, 10) !important; }
     .navbar-nav .nav-item a {
       color: #ffffff;
       font-size: 16px;
       font-weight: bold;
       }
       .navbar-brand{
-        color: black;
+        color: rgba(12, 10, 10, 0.966);
         font-size: 30px;
         font-weight: bold;
         font-family: fantasy;
